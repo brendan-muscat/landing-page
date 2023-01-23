@@ -1,50 +1,63 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 
 }
 
-ul {
+main,
+section,
+footer {
+    padding: 100px;
     display: flex;
-    gap: 10px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
+    flex-direction: column;
+    font-family: 'Roboto', arial;
 }
 
-a {
-    text-decoration: none;
-}
+/* nav bar part*/
 
-header {
+nav {
     display: flex;
-    /* background-color: #1F2937; */
+    justify-content: space-between;
     padding: 0 100px;
     color: white;
     align-items: center;
     padding-top: 10px;
+    background-color: #1F2937;
+    font-family: 'Roboto', arial;
 
 }
 
-.logo {
+.nav-logo img {
     margin-left: -15px;
     width: auto;
     height: 70px;
 }
 
-.container {
-    padding: 50px 100px;
+.right-links ul {
     display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+
 }
 
-.background-image {
-    background-image: url(img/background-2.jpg);
-    background-size: cover;
-    background-color: black;
-    /* background-color: #1F2937; */
-    /* column-count: 2; */
+.right-links ul a {
+    text-decoration: none;
+    color: white;
+}
+
+/* hero part */
+
+main {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 h1 {
@@ -54,13 +67,7 @@ h1 {
     margin: 0;
 }
 
-h3 {
-    margin-bottom: 0;
-}
-
-
-
-.subtext {
+.hero-subtext {
     font-size: 18px;
     color: white;
     margin-top: -1px;
@@ -70,22 +77,12 @@ h3 {
 
 }
 
-.right-links {
-    margin-left: auto;
-}
-
-.right-links ul {
-    gap: 50px;
-    font-size: large;
-    font-weight: bold;
-    text-shadow: 2px 2px black;
-}
-
-.hero-img {
-    height: 220px;
+.hero-img img {
     width: auto;
-    margin-left: auto;
+    height: 300px;
 }
+
+/*sign up bottons */
 
 .sign-up {
     border-radius: 10px;
@@ -99,23 +96,20 @@ h3 {
 
 }
 
-#sign-up-bottom {
+#s3-sign-up {
     border-color: white;
     border-style: solid;
     border-width: 2px;
 }
 
-/* .hero-seconary-text-container {
-    margin-top: -20px;
-} */
 
-/* .logo-container {
-    width: 100px;
-    height: 50px;
-    border: 1px solid white;
-} */
+.button-wrapper {
+    margin-left: auto;
+}
 
-#section-2 {
+/* section 1 part */
+
+.section-1 {
     margin-top: -40px;
     display: flex;
     flex-direction: column;
@@ -128,21 +122,20 @@ h2 {
     color: #1F2937;
 }
 
-.img-text-wrapper {
+.figure-wrapper {
     display: flex;
     justify-content: space-around;
     gap: 50px;
 }
 
-.img-text {
+figure {
     display: flex;
-    flex: 0;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.img {
+.figure-img {
     width: 200px;
     height: 200px;
     border-color: #3882f6;
@@ -150,10 +143,19 @@ h2 {
     border-radius: 15px;
 }
 
-#section-3 {
+figcaption {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* section-2 part */
+
+.section-2 {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
+
 }
 
 blockquote {
@@ -161,18 +163,18 @@ blockquote {
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
-
 }
 
 cite {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
     font-weight: bold;
     font-style: normal;
+    text-align: right;
+    margin-right: 80px;
 }
 
-#section-4 {
+/* section-3 part */
+
+.section-3 {
     display: flex;
     justify-content: center;
     color: white;
@@ -181,13 +183,34 @@ cite {
 .blue-wrapper {
     background-color: #3882f6;
     border-radius: 10px;
-    width: 100%;
+    width: 75vh;
     display: flex;
     padding: 30px 100px;
-    display: flex;
     align-items: center;
 }
 
-.button-wrapper {
-    margin-left: auto;
+.text-wrapper {
+    line-height: 5px;
+}
+
+.text-1 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.text-2 {
+    font-style: italic;
+}
+
+/* footer part */
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    font-family: 'Roboto', arial;
+}
+
+.footer-text {
+    color: white;
+
 }
